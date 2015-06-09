@@ -9,7 +9,28 @@
         }
     ],
     "require": {
-	"components/jquery": "*",
-	"twbs/bootstrap": "3.*"
+        "components/jquery": "*",
+        "components/bootstrap": "3.*"
+    },
+    "extra": {
+        "component": {
+            "scripts": [
+                "dist/js/bootstrap-dialog.js"
+            ],
+            "styles": [
+                "dist/css/bootstrap-dialog.css"
+            ],
+            "files": [
+                "dist/js/bootstrap-dialog.min.js",
+                "dist/css/bootstrap-dialog.min.css",
+                "dist/less/bootstrap-dialog.less"
+            ],
+            "shim": {
+                "deps": [
+                    "jquery",
+                    "bootstrap"
+                ]
+            }
+        }
     }
 }
